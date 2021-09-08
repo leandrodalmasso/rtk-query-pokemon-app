@@ -1,25 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Pokemon from "./Pokemon";
 
-function App() {
+export default function App() {
+  const pokemons = ['bulbasaur', 'pikachu', 'ditto', 'bulbasaur'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {pokemons.map((name, i) => <Pokemon name={name} key={i} />)}
     </div>
-  );
+  )
 }
-
-export default App;
