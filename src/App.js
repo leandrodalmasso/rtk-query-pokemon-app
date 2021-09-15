@@ -3,7 +3,7 @@ import './App.css';
 import Pokemon from "./Pokemon";
 
 export default function App() {
-  const pokemons = ['bulbasaur', 'pikachu', 'ditto', 'bulbasaur'];
+  const pokemons = ['bulbasaur', 'pikachu', 'ditto', 'charmander'];
 
   return (
     <div className="App">
